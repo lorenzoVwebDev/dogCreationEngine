@@ -1,3 +1,5 @@
 .env
 php.php
 settingsBackup.json
+/vendor/
+/node_modules/
