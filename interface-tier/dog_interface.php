@@ -1,15 +1,5 @@
 <?php
 declare(strict_types=1);
-require '../vendor/autoload.php';
-
-use ScssPhp\ScssPhp\Compiler;
-
-$scss = new Compiler();
-$scssContent = file_get_contents('../style/style.scss');
-$compiledCss = $scss->compileString($scssContent)->getCss();
-$oldCssFile = fopen("../style/style.css", "w");
-fwrite($oldCssFile, $compiledCss);
-fclose($oldCssFile); 
 
 function checkUrlValidity($url) {
   // Use get_headers to fetch HTTP response headers from the URL
